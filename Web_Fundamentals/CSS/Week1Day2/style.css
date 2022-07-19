@@ -1,0 +1,21 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    background-color: black;
+    color: white;
+}
+
+span{
+    color: #00ffff
+}
+h2{
+    font-style: italic;
+    background-color: blueviolet;
+    text-align: center;
+}
+h3{
+    text-decoration: underline;
+    text-align: right;
+    background-color: #9fc5f8 ;
+}
