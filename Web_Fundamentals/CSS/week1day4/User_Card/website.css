@@ -3,12 +3,14 @@
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
+
 .mainpage{
     padding-left: 15%;
     padding-right: 15%;
     background-color: #111111;
     height: 50px;
 }
+
 /*--- top navbar -- */
 .nav{
     display:flex;
@@ -25,8 +27,8 @@
     color:white;
     margin-left: 15px;
 }
+
 .nav-links{
-    display:flex;
     list-style: none;
     align-items: center;
 }
@@ -40,14 +42,18 @@
     font-size: 20px;
     margin-top: 10px;
     margin-right: 15px;
+    border-radius: 5px;
 }
+
 .active{
     font-weight: bolder;
 }
+
 /* ----user card----- */
 .usercard{
     height: 400px;
 }
+
 .headerup{
     height: 100px;
     background-color: #17A2B8;
@@ -59,14 +65,18 @@
     padding: 30px;
     height: 150px;
     width: 150px;
+    border-radius: 40%;
 }
+
 .cardname{
     padding-top: 100px;
     padding-left: 40px;
 }
+
 h4{
     padding: 10px;
 }
+
 .marker{
     height: 16px;
     width: 11px;
@@ -76,6 +86,7 @@ h4{
 .usercard p{
     padding-left: 40px;
 }
+
 .gear{
     height: 20px;
     width: 20px;
@@ -97,24 +108,29 @@ h4{
     width: 58%;
     align-items: center;
 }
+
 .education{
     margin-top: 20px;
 }
+
 .smallheader{
     background-color: #333333;
     color:white;
     margin-left: 0px;
-    padding: 5px 20px
+    padding: 5px 20px;
+    border-radius: 3px;
 }
 
 .border{
     border: 3px solid gray;
+    border-radius: 2px;
 }
 
 .bolded{
     padding-left: 20px;
     justify-content: left;
 }
+
 .greyed{
     padding-left: 20px;
     color: rgb(148, 148, 148);
@@ -130,6 +146,7 @@ h4{
     width: 40px;
     margin-left: 10px;
     display: block;
+    border-radius: 40%;
 }
 
 .d-flex{
@@ -147,12 +164,16 @@ h4{
 .just-between{
     justify-content: space-between;
 }
+
 .connect-name{
     margin-top: 10px;
+    margin-left: 10px;
 }
+
 .right_bottom{
     margin-top: 20px;
 }
+
 .more{
     border-top: 0px;
     display:block;

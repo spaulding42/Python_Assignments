@@ -13,7 +13,7 @@
     <div class="mainpage">
         <!-- top navbar -->
         <div class="nav">
-            <ul class="nav-links">
+            <ul class="nav-links d-flex">
                 <h1 class="nav-title">Profile</h1>
                 <li><a href="#">Home</a></li>
                 <li><a href="#" class="active">My Profile</a></li>
@@ -47,10 +47,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="right_column">
                 <!-- ------------- top right column ---------->
                 <div class="right_top"> 
-                    <p class="smallheader">2 Connection Requests</p>
+                    <p class="smallheader d-flex">
+                        <div class="num_outline">2</div>
+                        <div>Connection Requests</div>
+                    </p>
                     <div class="border" id="connections">
                         <div class="connect-accept just-between d-flex">
                             <div class="connect-left d-flex">
@@ -78,6 +82,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- -----------bottom right column------------>
                 <div class="right_bottom">
                     <p class="smallheader">500+ Your Connections</p>
