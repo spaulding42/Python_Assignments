@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav d-flex align-center justify-between">
+        <h1 class="title">Dojonary</h1>
+        <input type="text" class="search" value="Search">
+        <button onclick="login_state(this)" class="login">Login</button>
+    </div>
+    <div class="maincontent">
+        <div class="toprow d-flex justify-between">
+            <div class="top_left border d-flex align-center">
+                <div class="def_left">
+                    <h2 class="h2name center_text">ninja</h2>
+                    <h4 class="h4name center_text">noun</h4>
+                    <h5 class="h5name center_text">Plural: ninjas</h5>
+                    <div onclick="alert('ninja was liked!')" class="likes login border center_text">13 likes</div>
+                </div>
+                <h3>A practioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></h3>
+            </div>
+            <div class="top_right border center_text">
+                <h2>Doojonary is defined by <span>you</span></h2>
+                <div onclick="remove(this)" class="add_def border center_text border">Add Definition</div>
+            </div>
+        </div>
+        <div class="bottom border d-flex align-center">
+            <div class="def_left">
+                <h2 class="h2name center_text">ninja</h2>
+                <h4 class="h4name center_text">noun</h4>
+                <h5 class="h5name center_text">Plural: ninjas</h5>
+                <div class="likes login border center_text">37 likes</div>
+            </div>
+            <h3>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
