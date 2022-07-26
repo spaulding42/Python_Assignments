@@ -1,0 +1,96 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.listrow {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.border{
+    border: 3px solid black;
+}
+
+.toprow{
+    margin-bottom: 10px;
+}
+
+.d-flex{
+    display:flex;
+}
+.like_button{
+    width: 20%;
+    height: 30px;
+    background-color: #FFD966;
+    box-shadow: 4px 4px 3px black;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-right: 15px;
+    display:flex;
+    justify-content: center;
+}
+
+#likednum{
+    padding-right: 5px;
+}
+
+#likednum2{
+    padding-right: 5px;
+}
+
+#likednum3{
+    padding-right: 5px;
+}
+
+.bottomrow{
+    padding: 20px;
+}
+
+.profile_pic{
+    height: 100px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.left_column{
+    height: 250px;
+    margin-right: 20px;
+    width: 25%;
+}
+.left_column > a{
+    display:block;
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.left_column > h2{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+.right_column{
+    width: 70%;
+    font-size: large;
+}
+
+.header{
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.mainfeed{
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+
+}
+
+.center{
+    justify-content: center;
+}
