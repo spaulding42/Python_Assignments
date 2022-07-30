@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: lightgray;
+}
+/* generic CSS classes */
+
+.d-flex{
+    display: flex;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-text {
+    text-align: center;
+}
+
+.background3 {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.background2{
+    background-color: red;
+}
+
+.background1{
+    background-color: black;
+    color: white;
+}
+
+.pad-left{
+    padding-left: 20px;
+}
+
+.margin-left20 {
+    margin-left: 20px;
+}
+
+.border{
+    border: 3px solid black;
+}
+
+.pad_10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.pad_around {
+    padding: 6px 6px;
+}
+
+.marginTnB {
+    margin: 10px 0px;
+}
+/* -------------Scoreboard */
+
+.dsnn {
+    margin-left: 10%;
+}
+
+.subheader > img {
+    height: 30px;
+    padding-left: 10px;
+}
+
+.search {
+    margin-left: 50px;
+}
+
+.profile {
+    margin-right: 10%;
+}
+
+/* Main Content */
+main{
+    margin-left: 10%;
+    width: 80%;
+}
+/* left column */
+
+.btn{
+    width: 125px;
+    height: 30px;
+    background-color: #FFE599;
+    color: black;
+    box-shadow: 3px 3px 3px black;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.top_story_title {
+    border-bottom: 3px solid black;
+}
+
+
+.leftcolumn {
+    padding: 10px 0px;  
+    width: 25%;
+}
+
+.sub{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.never_miss {
+    padding-bottom: 5px;
+}
+
+.signIn {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #2B78E4;
+}
+
+.signUp {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+
+/* right column */
+.rightcolumn {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 64%;
+}
+
+.recording {
+    height: 20px;
+    padding: 7px 10px;
+
+}
+
+.whosWinning {
+    margin-top: 20px;
+}
+
+.whosPlaying {
+    margin-top: 10px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+.live {
+    color: red;
+    width: 25%;
+}
+
+.leading {
+    width: 75%;
+}
+
+.tvt {
+    height: 100px;
+    width: 100px;
+}
+
+.vs {
+    margin: 30px 0px;
+}
+
+.VS_column > p {
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px 20px;
+}
+
+.sjScoreSize {
+    font-size: 60px;
+}

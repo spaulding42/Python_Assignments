@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Belt Exam Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scoreboard -->
+    <div class="scoreboardmain">
+        <div class="scoreboard d-flex just-between pad_10 background3">
+            <h1 class="live_scores">Live Scores</h1>
+            <div class="game1 pad-left">
+                <div class="game1team1">SJC Ninjas - <span id="mini_ninja_score">314</span></div>
+                <div class="game1team2">NS Pirates - <span id="mini_pirate_score">159</span> </div>
+            </div>
+            <div class="game2 pad-left">
+                <div class="game2team1">CHI Samurai - 0</div>
+                <div class="game2team2">TUL Wizards - 0</div>
+            </div>
+            <div class="game3 pad-left">
+                <div class="game3team1">BOS Hackers - 13</div>
+                <div class="game3team2">TYO Youkai - 37</div>
+            </div>
+            <div class="game4 pad-left">
+                <div class="game4team1">BOI Knights - 5</div>
+                <div class="game4team2">SEA Sea Lions - 11</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="subheader d-flex just-between border background1 align-center">
+            <h1 class="dsnn background2">DSNN</h1>
+            <h3 class="football pad-left">Football</h3>
+            <h3 class="basketball pad-left">Basketball</h3>
+            <h3 class="baseball pad-left">Baseball</h3>
+            <h3 class="soccer pad-left">Soccer</h3>
+            <h3 class="more pad-left">More...</h3>
+            <img src="assets/search-light.png" alt="search icon" class="search">
+            <img src="assets/hamburger-light.png" alt="menu icon" class="menu">
+            <img src="assets/user-circle-light.png" alt="person sillhouette" class="profile">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="d-flex just-between">
+        <div class="leftcolumn">
+            <div class="top_story_box background3 marginTnB pad_around">
+                <h2 class="top_story_title">Top Stories</h2>
+                <div class="top_story_text">
+                    <h4>Ninjas up big in 5th</h4>
+                    <h4>Best sports cities</h4>
+                    <h4>Choi joins Hall of Fame</h4>
+                    <h4>Tournament underway</h4>
+                    <h4>Samurai at Wizards...</h4>
+                </div>
+            </div>
+            <div class="middlebox background3 marginTnB pad_around">
+                <h3 class="align-text">Customize your DSNN</h3>
+                <div class="signIn_signUp d-flex justify-between pad_around">
+                    <div class="signIn btn align-text border">Sign In</div>
+                    <div class="signUp btn align-text border">Sign Up</div>
+                </div>
+            </div>
+            <div id="sub_box"  class="never_miss background3 marginTnB pad_around">
+                <h3 class="align-text">Never miss a play</h3>
+                <div class="sub btn align-text border" onclick="sub()">Subscribe</div>
+            </div>
+        </div>
+        
+        <div class="rightcolumn background3">
+            <div class="whosWinning d-flex">
+                <img src="assets/Record-circle.png" alt="red circle" class="recording">
+                <h2 class="live">Live</h2>
+                <h2 class="leading">Ninjas leading Pirates</h2>
+            </div>
+            <div class="whosPlaying d-flex just-around">
+                <div class="leftPlayer margin-left20">
+                    <img class = "tvt" src="assets/sjc-ninjas.png" alt="sjn Ninjas logo">
+                    <h3>San Jose</h3>
+                    <h2>Ninjas</h2>
+                    <p>(10 W - 3 L)</p>
+                    <h1 id="sjScore" class="sjScoreSize" onclick="increase_Score(this)">314</h1>
+                </div>
+                <div class="VS_column">
+                    <h2 class="vs align-text">VS</h2>
+                    <p><span id="pre-timer">0: </span><span id="miniTimer">13</span> remaining</p>
+                    <p>5th period</p>
+                </div>
+                <div class="rightPlayer">
+                    <img class="tvt" src="assets/ns-pirates.png" alt="NS pirates logo">
+                    <h3>Nova Scotia</h3>
+                    <h2>Pirates</h2>
+                    <p>(12 W - 2 L)</p>
+                    <h1 id="nsScore" class="sjScoreSize" onclick="increase_Score(this)">159</h1>
+                </div>
+            </div>
+            <h3 class ="footer">a conservative match between the two top-performing sides in the Central League Division with a number 1 seed at stake ... <a href="#">get live updates</a></h3>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

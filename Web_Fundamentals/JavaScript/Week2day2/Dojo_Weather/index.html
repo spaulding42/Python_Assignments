@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DojoWeather           Burbank         Chicago        Dallas -->
+    <header class="d-flex justify-between align-center">
+        <h1 class="title">DojoWeather</h1>
+        <h3 class="burbank" onclick="loadWeather(this)">Burbank</h3>
+        <h3 class="chicago" onclick="loadWeather(this)">Chicago</h3>
+        <h3 class="dallas" onclick="loadWeather(this)">Dallas</h3>
+    </header>
+
+    <!-- san jose                show temp in c^ -->
+    <nav class ="navbar d-flex justify-between margins">
+        <h2 class="san_jose">San Jose</h2>
+        <div class="show_temp d-flex">
+            <h3 class="showtempmsg">show temperature in </h3>
+            <select name="temp" id="tempType" onchange="changeTempMeasure(this)">
+                <option value="valC">ºC</option>
+                <option value="valF">ºF</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="d-flex justify-between margins">
+        <div class="todayBox background2">
+            <h2 class="today align-text">Today</h2>
+            <img class = "imgSize" src="assets/some_rain.png" alt="some rain icon">
+            <h4 class="somerain align-text">some rain</h4>
+            <div class="high_low_today d-flex justify-between">
+                <h2 class="red"><span id ="today_high">24</span>º</h2>
+                <h2 class="blue"><span id ="today_low">18</span>º</h2>
+            </div>
+        </div>
+        <div class="tomorrowBox background2">
+            <h2 class="tomorrow align-text">Tomorrow</h2>
+            <img class = "imgSize" src="assets/some_sun.png" alt="some sun icon">
+            <h4 class="somesun align-text">some sun</h4>
+            <div class="high_low_tomorrow d-flex justify-between">
+                <h2 class="red"><span id ="tomorrow_high">27</span>º</h2>
+                <h2 class="blue"><span id ="tomorrow_low">19</span>º</h2>
+            </div>
+        </div>
+        <div class="fridayBox background2">
+            <h2 class="friday align-text">Friday</h2>
+            <img class="imgSize" src="assets/some_clouds.png" alt="some clouds icon">
+            <h4 class="somerain align-text">some clouds</h4>
+            <div class="high_low_friday d-flex justify-between">
+                <h2 class="red"><span id ="friday_high">21</span>º</h2>
+                <h2 class="blue"><span id ="friday_low">16</span>º</h2>
+            </div>
+        </div>
+        <div class="saturdayBox background2">
+            <h2 class="saturday align-text">Saturday</h2>
+            <img class = "imgSize" src="assets/some_sun.png" alt="some sun icon">
+            <h4 class="somerain align-text">some sun</h4>
+            <div class="high_low_saturday d-flex justify-between">
+                <h2 class="red"><span id ="saturday_high">26</span>º</h2>
+                <h2 class="blue"><span id ="saturday_low">21</span>º</h2>
+            </div>
+        </div>
+    </main>
+    <footer class="border d-flex just-around align-center">
+        <img src="assets/cookie.png" alt="cookie icon">
+        <div class="cookie_text">
+            <h3 >Stop! Cookie time</h3>
+            <h5>We use cookies (sadly not the edible ones) to personalize content 
+                and ads, to provide social media features and to analyse our traffic. 
+                <a href="#">Read more...</a></h5>
+        </div>
+        <div class="cookie_accept align-text align-center d-flex" onclick="accepted()">I Accept</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

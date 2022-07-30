@@ -1,0 +1,101 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* generic classes */
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-text {
+    text-align: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.border {
+    border: 5px solid black;
+}
+
+.background2 {
+    background-color: #eeeeee;
+}
+/* Header */
+header {
+    background-color: #9FC5F8;
+    color: whitesmoke;
+    height: 100px;
+}
+
+.title {
+    padding-left: 15%;
+}
+.dallas {
+    padding-right: 15%;
+}
+
+/* nav    san jose         show temp in   c^ */
+.navbar {
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    margin: 10px 0px;
+}
+
+/* main content */
+main {
+    margin-top: 20px;
+}
+.imgSize {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    padding: 5px 15px;
+}
+
+.margins {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.red{
+    color: red;
+    padding-left: 10px;
+}
+
+.blue{
+    color:blue;
+    padding-right: 10px;
+}
+
+
+/* cookie footer message */
+footer{
+    background-color: #eeeeee;
+    width: 80%;
+    margin-left: 10%;
+    position: fixed;
+    bottom: 0px;
+    
+}
+
+.cookie_accept {
+    width: 100px;
+    height: 30px;
+    padding: 0px 10px;
+    background-color: #9FC5F8;
+    box-shadow: 3px 3px black;
+    margin-right: 5px;
+}
