@@ -1,0 +1,9 @@
+body {
+    background-image: url("assets/stars.jpg");
+}
+#box{
+    position: absolute;
+    background-color: salmon; 
+    width: 100px; 
+    height: 100px
+}

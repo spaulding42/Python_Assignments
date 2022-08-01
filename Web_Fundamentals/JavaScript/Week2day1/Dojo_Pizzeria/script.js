@@ -59,11 +59,12 @@ function randomOrder(){
 }
 var order1 = pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]);
 console.log("order 1 is: ");
-// console.log(order1);
+console.log(order1);
 
 var order2 = pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]);
 console.log("order 2 is: ");
-// console.log(order2);
+console.log(order2);
+
 var pizza3 = randomOrder();
 var order3 = pizzaOven(pizza3[0], pizza3[1], pizza3[2], pizza3[3]);
 console.log("random order is: ");
