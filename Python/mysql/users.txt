@@ -1,0 +1,22 @@
+INSERT INTO users  (first_name, last_name, email, created_at, updated_at)
+VALUES ('Devin', 'Spaulding', 'spaulding42@gmail.com', now(),now());  
+
+INSERT INTO users  (first_name, last_name, email, created_at, updated_at)
+VALUES ('Billy', 'Spauldong', 'spauldong@gmail.com', now(),now());  
+
+INSERT INTO users  (first_name, last_name, email, created_at, updated_at)
+VALUES ('Jess', 'Kewlbreeze', 'therealkewl@gmail.com', now(),now());  
+
+select * from users;
+
+select * from users where email = 'spaulding42@gmail.com';
+
+select * from users where id = 3;
+
+update users SET last_name = "Pancakes" WHERE id = 3;
+
+delete from users where id = 2;
+
+SELECT * FROM users ORDER BY first_name ASC;
+
+SELECT * FROM users ORDER BY first_name DESC;

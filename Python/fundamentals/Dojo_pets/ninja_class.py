@@ -1,4 +1,4 @@
-from pet_class import pepper
+from pet_class import Pet
 
 class Ninja:
 # implement __init__( first_name , last_name , treats , pet_food , pet )
@@ -21,5 +21,4 @@ class Ninja:
         self.pet.noise()
         return self
 
-print("ninja imported")
-ninja1 = Ninja("Bruce", "Lee", "bone", "kibble", pepper)
+# print("ninja imported")

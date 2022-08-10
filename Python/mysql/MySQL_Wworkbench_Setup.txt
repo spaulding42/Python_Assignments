@@ -1,0 +1,13 @@
+select * from names;
+INSERT INTO  names (name, created_at, updated_at)
+values ('Devin', now(),now());
+
+INSERT INTO names (name, created_at, updated_at)
+values ('Billy bob', now(),now());
+
+SET SQL_SAFE_UPDATES = 0;
+UPDATE names
+SET name = 'Devin Spaulding'
+WHERE name = 'Devin';
+
+DELETE FROM names where id > 4 and name = 'Billy bob';

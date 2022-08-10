@@ -1,0 +1,69 @@
+*{
+    margin: auto;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 20px;
+}
+/* main page will carry over to results page since it is linked in both. 
+******************some css applies to both pages***********************
+ */
+h1{
+    color: yellow;
+    font-size: 50px;
+    border-bottom: 8px solid black;
+    border-radius: 5px;
+}
+
+p{
+    color:whitesmoke;
+    padding: 10px 0px;
+}
+.form_box{
+    background-color: #333;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.padding{
+    padding: 10px 0px;
+}
+
+
+.width80{
+    width: 90%;
+    border-radius: 5px;
+}
+
+.submit_btn{
+    display:block;
+    justify-self: left;
+    margin: 10px;
+    background-color: yellow;
+    box-shadow: 3px 3px 3px black;
+    height: 35px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.border{
+    border: 3px solid red;
+}
+
+.color1{
+    color:whitesmoke;
+}
+/* results page ----------------------*/
+
+tr td {
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+.return_btn{
+    margin: auto;
+}
+
+span{
+    font-size: 10px;
+}
+

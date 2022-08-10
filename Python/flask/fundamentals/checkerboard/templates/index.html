@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    
+    <!-- dynamic css needs to be in html document. static css can be in the static file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/style.css') }}">
+    <style>
+        .color1 {
+            background-color: {{color_1}};
+        }
+        .color2{
+            background-color: {{color_2}};
+        }
+    </style>
+</head>
+<body>
+    <!-- simplified greatly after watching the video tutorial!!!! -->
+    <h1>{{color_1}}{{color_2}}{{height}}x{{width}}</h1>
+    <table>
+        {% for x in range(height) %}
+            <tr>
+                {% for j in range(width) %}
+                    <td class="color{{(x+j)%2+1}}"></td> 
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        
+    </table>
+</body>
+</html>

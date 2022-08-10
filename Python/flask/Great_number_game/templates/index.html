@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="center">Welcome to the Great Number Game!</h1>
+    <h4 class="center">I am thinking of a number beween 1 and 100</h4>
+    
+    <form action="/process" method="post" class="guess_box">
+        <h3 class="color1 center padding-tb margin-tb">Take a Guess!!!</h3>
+        <input type="number" name="guess" class="center input_box margin-tb">
+        <button id="guess_btn" class="padding-tb">Guess</button>
+    </form>
+
+    </div>
+</body>
+</html>

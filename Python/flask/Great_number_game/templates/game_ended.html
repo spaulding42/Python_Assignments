@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Game - Ended</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="center">Welcome to the Great Number Game!</h1>
+    <h4 class="center">I am thinking of a number beween 1 and 100</h4>
+    <form action ="/" class="guess_result center color-{{session['color']}}">
+        <div class="high_or_low center padding-tb" id="highlow"> {{ session['end_msg'] }} </div>
+        <button id="playAgain" type ="hidden" class="center">Play Again</button>
+    </form>
+    </div>
+</body>
+</html>

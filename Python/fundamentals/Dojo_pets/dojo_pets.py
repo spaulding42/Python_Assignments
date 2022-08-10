@@ -1,6 +1,8 @@
-from ninja_class import ninja1
+from ninja_class import Ninja
 from pet_class import Pet
 
+pepper = Pet("Pepper", "dog", "roll over")
+ninja1 = Ninja("Bruce", "Lee", "bone", "kibble", pepper)
 class Dog(Pet):
     def __init__(self, name, type, tricks):
         super().__init__(name, type, tricks)

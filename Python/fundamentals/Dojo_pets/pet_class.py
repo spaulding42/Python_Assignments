@@ -41,5 +41,4 @@ class Pet:
         print("----------------")
         return self
 
-print("pet imported")
-pepper = Pet("Pepper", "dog", "roll over")
+# print("pet imported")

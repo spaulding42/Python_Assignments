@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+</head>
+<body>
+    <div class="box">
+        <h1 class = "center">Counter</h1>
+        <h3 class = "center">{{count}} times</h3>
+        <div class="buttons">
+            <!-- Add two visits button -->
+            <form action="/clicked" method="post">
+                <input type="hidden" name="which_button" value="add">
+                <button class = "addbtn" name="add">Add two visits!</button>
+            </form>
+            <!-- reset visits button -->
+            <form action="/clicked" method = "post">
+                <input type="hidden" name="which_button" value="clear">
+                <button class = "clearbtn" name = "clear">reset visits</button>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

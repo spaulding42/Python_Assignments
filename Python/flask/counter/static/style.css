@@ -1,0 +1,46 @@
+
+.addbtn {
+    background-color: pink;
+    margin-left: 20px;
+}
+
+.clearbtn {
+    background-color: green;
+}
+
+/* make the button shape */
+button {
+    height: 40px;
+    width: 200px;
+    border: 2px solid gray;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+form {
+    display: inline;
+}
+
+/* make the box that contains everything */
+.box{
+    width: 500px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    margin: 50px;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}

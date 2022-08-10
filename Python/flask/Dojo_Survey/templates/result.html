@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="form_box">
+        <h1 class="submitted_info">Submitted Info: </h1>
+        <table class="width80">
+            <tr><!-- Name -->
+                <td>Name:</td>
+                <td>{{session['name']}}</td>
+            </tr>
+            <tr> <!--Dojo Location-->
+                <td>Dojo Location:</td>
+                <td>{{session['location']}}</td>
+            </tr>
+            <tr> <!--Favorite Language-->
+                <td>Favorite Language:</td>
+                <td>{{session['language']}}</td>
+            </tr>
+            <tr> <!--Comment Section-->
+                <td>Comment:</td>
+                <td>{{session['comments']}}</td>
+            </tr>
+            <tr> <!--Fruit selection(s)-->
+                <td>Fruits you selected:</td>
+                <td> <!--jinja2 for loop adds the full list minus the last one so it doesn't add an extra ',' at the end then outside the loop adds the last value -->
+                    {% for i in range((session['fruits']|length)-1)%}
+                        {{session['fruits'][i]}}, 
+                    {% endfor %}
+                    {{session['fruits'][(session['fruits']|length)-1]}}
+                </td>
+            </tr>
+        </table>
+        <!-- Only button that does anything on the page and it redirects back to the input page'index.html' -->
+        <form action="/">
+            <button class="submit_btn return_btn">Go Back</button>
+        </form>
+    </div>
+</body>
+</html>

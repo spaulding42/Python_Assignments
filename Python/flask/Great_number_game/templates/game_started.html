@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Game - Started</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="center">Welcome to the Great Number Game!</h1>
+    <h4 class="center">I am thinking of a number beween 1 and 100</h4>
+    <div class="guess_result center color-red">
+        <div class="high_or_low center padding-tb" id="highlow"> Too {{session['high_low']}}!</div>
+        <!-- <button id="playAgain" type ="hidden" class="center">Play Again</button> -->
+    </div>
+    <form action="/process" method="post" class="guess_box">
+        <h3 class="color1 center padding-tb margin-tb">Guesses so far: {{ session['guess_count']}} </h3>
+        <input type="number" name="guess" class="center input_box margin-tb">
+        <button id="guess_btn" class="padding-tb">Guess</button>
+    </form>
+    <div class="guessedsofar">
+        <p class="white">low guesses: {{session['low_so_far']}}</p>
+        <p class="white">high guesses: {{session['high_so_far']}}</p>        
+    </div>
+    </div>
+</body>
+</html>

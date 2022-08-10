@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Start of form -->
+    <form action="/process" method="post" class="form_box">
+        <h1>Dojo Survey</h1>
+        <p>Your Name:</p>
+        
+        <!-- input box for 'name' -->
+        <input type="text" name="name" class="width80">
+        <p class="your_location">Dojo Location</p>
+        
+        <!-- location drop down menu for 'location' -->
+        <select name="location" id="dojo_location" class="width80">
+            <option value='Seattle'>Seattle</option>
+            <option value='Chicago'>Chicago</option>
+            <option value='San Jose'>San Jose</option>
+            <option value='Burbank'>Burbank</option>
+            <option value='Bellvue'>Bellvue</option>
+        </select>
+        
+        <!-- radio selection for favorite 'language'-->
+        <p class="favorite_language">Favorite Language:</p>
+        <input type="radio" name="language" id="option1" value="JavaScript">
+        <label for="option1" class="color1">JavaScript</label>
+        <input type="radio" name="language" id="option2" value="Python">
+        <label for="option2" class="color1">Python</label>
+        <input type="radio" name="language" id="option3" value="C#" checked="checked">
+        <label for="option3" class="color1">C#</label>
+        <input type="radio" name="language" id="option4" value="HTML">
+        <label for="option4" class="color1">HTML</label>
+        <input type="radio" name="language" id="option5" value="CSS">
+        <label for="option5" class="color1">CSS</label>
+        
+        <!-- comment section for 'comments' -->
+        <p class="comments">Comments:</p>
+        <textarea name="comments" id="comments_box" class="width80" cols="30" rows="10"></textarea>
+        
+        <!-- check boxes to select any/all fruit you would like -->
+        <p>What kind of fruit do you like? <span>(select all that apply)</span> </p>
+        <input type="checkbox" id="fruit1" name="pineapple" value="Pineapple">
+        <label for="fruit1" class="color1"> Pineapple</label><br>
+        <input type="checkbox" id="fruit2" name="bananas" value="Bananas">
+        <label for="fruit2" class="color1"> Bananas</label><br>
+        <input type="checkbox" id="fruit3" name="strawberries" value="Strawberries">
+        <label for="fruit3" class="color1"> Strawberries</label><br><br>
+        
+        <button class="submit_btn">Submit</button>
+        
+
+    </form>
+</body>
+</html>
