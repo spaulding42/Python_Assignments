@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <style>
+        .form_box {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 50px;
+            width: 60%;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            padding-left: 50px;
+        }
+        .home {
+            padding-top: 20px;
+            padding-right: 50px;
+        }
+        .spacing{
+            margin-bottom: 20px;
+        }
+        .add_btn{
+            display:block;
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: 130px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Add a New User</h1>
+        <a href="/" class="home spacing">Home</a>
+    </header>
+    
+    <form action="/create_user" method="POST" class="form_box">
+        <label for="first_name ">First Name:</label>
+        <input type="text" name="first_name" class ="spacing">
+        <label for="first_name">Last Name:</label>
+        <input type="text" name="last_name" class ="spacing">
+        <label for="email" >Email:</label>
+        <input type="text" name="email" class ="spacing">
+        <input type="submit" value="Add User" class="add_btn">
+    </form>
+    
+</body>
+</html>

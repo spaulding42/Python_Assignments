@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+</head>
+<style>
+    .block{
+        display: block;
+    }
+    .display_box{
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+        }
+        .btn{
+            display:block;
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: 100px;
+            text-align: center;
+
+        }
+</style>
+<body>
+    <a href="/" class="home spacing">Home</a>
+    <div class="display_box">
+        <p>First Name: </p>
+        <form action="/update/{{user.id}}" method = "post">
+            <input type="text" name="first_name" value="{{user.first_name}}">
+            <p>Last Name:</p>
+            <input type="text" name="last_name" value="{{user.last_name}}">
+            <p>Email: </p>
+            <input type="text" name="email" value="{{user.email}}" class="block">
+            <button class = "btn">Update</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying User</title>
+    <style>
+        .display_box{
+            padding: 20px;
+            text-align: center;
+            width: 500px;
+            height: 200px;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="home spacing">Home</a>
+    <div class = "display_box">
+        <h2>Name: {{user.first_name}} {{user.last_name}}</h2>
+        <h2>Email: {{user.email}} </h2>
+        <h2>Created At: {{user.created_at}}</h2>
+        <h2>Updated At: {{user.update_at}}</h2>
+    </div>
+
+    <a href="/edit/{{user.id}}">Edit</a> | <a href="/delete/{{user.id}}">Delete</a>
+</body>
+</html>

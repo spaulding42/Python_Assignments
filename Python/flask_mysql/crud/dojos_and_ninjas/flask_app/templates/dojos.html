@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div  class = "d-flex main_box">
+        <div class="left">
+            <!-- add a dojo form... will redirect to process the name entered then will reload this page with updated dojo db -->
+            <h1 class ="header-tag">New Dojo</h1>
+            <form action="/add/dojo" method ="post">
+                <h3>Name: </h3>
+                <input type="text" name = "name" class="dojo_input">
+                <button class = "btn">Add Dojo</button>
+            </form>
+        </div>
+        <div class="right">
+            <h1 class ="header-tag">All Dojos</h1>
+            <!-- generate the list of all dojos in the db -->
+            {% for dojo in dojos %}
+                <a href="/dojos/ninjas/{{dojo.id}}" class="dojos">{{dojo.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <a href="/add_ninja" class="d-block add_ninja_btn">Add Ninja</a>
+</body>
+</html>

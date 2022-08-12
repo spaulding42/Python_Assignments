@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninjas in a dojo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="/">Home</a>
+    <div class="dojo_ninjas">
+        
+        {% if ninjas_in_dojo[0] != undefined %}
+            <!-- can collect the first index (since they will all be the same)-->
+            <h1 class="header-tag">{{ninjas_in_dojo[0].name}} Roster:</h1> 
+            <table>
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Age:</th>
+                    <th>Date joined the Dojo</th>
+                </tr>
+                <!-- ninja will have 1 dict with dojo name (from dojo), and first name, last name , age, created at, all from ninja table 
+                    that we joined onto the dojo table we are looking at-->
+                {% for ninja in ninjas_in_dojo %}  
+                    <tr>
+                        <td>{{ninja.first_name}}</td>
+                        <td>{{ninja.last_name}}</td>
+                        <td>{{ninja.age}}</td>
+                        <td>{{ninja.created_at}}</td>
+                    </tr>
+                {% endfor %}
+            </table>  
+        {% else %}
+            <!-- if ninjas in dojo is undefined that means when the DB combined the dojo with the ninjas where were no results so it returns undefined -->
+            <h1 class="header-tag">This dojo is a ghost town!</h1>
+        {% endif %}
+        
+    </div>
+</body>
+</html>

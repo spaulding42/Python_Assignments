@@ -1,0 +1,86 @@
+*{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 20px;
+}
+/* this is for the main Display to make and see all dojos */
+.left{
+    background-color: #34393E;
+    width: 33%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.right{
+    text-align: center;
+    background-color: #34393E;
+    width: 33%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h3 {
+    color: white;
+}
+.header-tag{
+    color: #057AFD;
+    text-align: center;
+    font-size: 40px;
+}
+.btn {
+    display: block;
+    background-color: #057AFD;
+    padding: 5px;
+    margin-top: 10px;
+}
+.d-flex{
+    display: flex;
+}
+.dojos{
+    color: #F9BD09;
+    display: block;
+}
+.d-block{
+    display: block;
+}
+.add_ninja_btn{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.main_box{
+    margin-top: 30px;
+}
+.dojo_input{
+    border-radius: 4px;
+    padding: 10px;
+    width: 95%;
+}
+
+/* add ninja template */
+.add_ninja_box {
+    width: 400px;
+    background-color: #34393E;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+/* Dojos Ninja roster page */
+.dojo_ninjas{
+    background-color: #34393E;
+    color:#F9BD09;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.wtf{
+    border: 3px solid black;
+}
