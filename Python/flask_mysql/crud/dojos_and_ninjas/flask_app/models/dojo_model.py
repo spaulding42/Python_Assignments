@@ -8,6 +8,7 @@ class Dojo:
             self.name = data['name']
             self.created_at = data['created_at']
             self.updated_at = data['updated_at']
+            self.list_ninjas = []
             
     @classmethod
     def get_all(cls):
@@ -24,7 +25,6 @@ class Dojo:
 
     @classmethod
     def add_dojo(cls, data ):
-        print("did i make it?---------------------------------")
         query = "INSERT INTO dojos ( name ) VALUES ( %(name)s);"
         
         # data is a dictionary that will be passed into the save method from server.py
@@ -36,7 +36,8 @@ class Dojo:
         results = connectToMySQL(DATABASE).query_db(query,data)
         # if the result of combining the dojo with the ninjas returns a list:
         if results:
-            dojos_with_ninjas = []
+            dojo_instance = cls(results[0])
+            all_ninjas = []
             # unpack the data from results into a list of dicts that can then be passed outside of the function
             # without this it will return a list of Dojos which it wont know what to do with outside of the model
             for row_in_db in results:
@@ -48,9 +49,11 @@ class Dojo:
                     'age': row_in_db['age'],
                     'created_at': row_in_db['ninjas.created_at'],
                     'updated_at': row_in_db['ninjas.updated_at'],
-                    'name': row_in_db['name'] #this name is actually the name of the Dojo which the ninja belongs to. Will need this passed to display the dojo name as the header
+                    'name': row_in_db['name'], #this name is actually the name of the Dojo which the ninja belongs to. Will need this passed to display the dojo name as the header
+                    'dojo_id': row_in_db['dojo_id']
                 }
+                ninja_instance = ninja_model.Ninja(ninja_data)
                 #adds an instance of the ninja_data(1 ninja) onto the current list of ninja_data(all ninjas in dojo)
-                dojos_with_ninjas.append(ninja_data)
-            return dojos_with_ninjas
-        return data
+                all_ninjas.append(ninja_instance)
+                dojo_instance.list_ninjas = all_ninjas
+            return dojo_instance

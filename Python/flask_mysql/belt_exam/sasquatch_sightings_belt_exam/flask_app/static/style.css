@@ -1,0 +1,97 @@
+* {
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.d-block{
+    display: block;
+}
+.bg1{
+    background-color: #34393E;
+}
+.white {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.c-blue {
+    color: #0365D0;
+}
+.bg-blue {
+    background-color: #0365D0;
+}
+.bg-green {
+    background-color: #28A644;
+}
+.column {
+    padding: 20px;
+    margin: 20px 40px;
+    width: 250px;
+}
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.input_box {
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.errormsg{
+    color:red;
+}
+
+.login_head {
+    padding: 20px;
+}
+
+.border{
+    border-radius: 10px;
+}
+/* welcome page for displaying all sightings */
+.sightings_box {
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 600px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-right: 200px;
+}
+
+.sighting_1 {
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_column_action {
+    display: block;
+    padding-right: 100px;
+
+}
+.padding_LR{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.margin_LR{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sas_input{
+    width: 80px;
+}
+
+.sighting_view {
+    margin-top: 20px;
+}
+
+.align_bottom {
+    align-self:flex-end;
+}

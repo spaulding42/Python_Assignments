@@ -13,9 +13,9 @@
     <a href="/">Home</a>
     <div class="dojo_ninjas">
         
-        {% if ninjas_in_dojo[0] != undefined %}
+        {% if dojos_ninjas.list_ninjas[0] != undefined %}
             <!-- can collect the first index (since they will all be the same)-->
-            <h1 class="header-tag">{{ninjas_in_dojo[0].name}} Roster:</h1> 
+            <h1 class="header-tag">{{dojos_ninjas.list_ninjas[0].name}} Roster:</h1> 
             <table>
                 <tr>
                     <th>First Name:</th>
@@ -25,7 +25,7 @@
                 </tr>
                 <!-- ninja will have 1 dict with dojo name (from dojo), and first name, last name , age, created at, all from ninja table 
                     that we joined onto the dojo table we are looking at-->
-                {% for ninja in ninjas_in_dojo %}  
+                {% for ninja in dojos_ninjas.list_ninjas %}  
                     <tr>
                         <td>{{ninja.first_name}}</td>
                         <td>{{ninja.last_name}}</td>

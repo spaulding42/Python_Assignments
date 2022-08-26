@@ -1,0 +1,64 @@
+*{
+    font-family: 'Mouse Memoirs', sans-serif;
+    padding: 10px 10px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* login page */
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display:flex;
+}
+.bg1{
+    background-color: #34393E;
+}
+h4 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.c-blue {
+    color: #0365D0;
+}
+.bg-blue {
+    background-color: #0365D0;
+}
+.bg-green {
+    background-color: #28A644;
+}
+.column {
+    padding: 20px;
+    margin: 20px 40px;
+    width: 250px;
+}
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.input_box {
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.errormsg{
+    color:red;
+}
+
+.view1{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
